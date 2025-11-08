@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Create venv & Intstall deps",
+            "type": "shell",
+            "command": [
+                "${env:ComSpec} /d /c if not exist .env (py -3 -m venv .venv)",
+                "||",
+                "python3 -m venv .venv"
+            ],
+            "problemMatcher": [],
+            "options": {"cwd": "${workspaceFolder}"}
+        },
+        {
+            "label": "Install requirements",
+            "type": "shell",
+            "command":[
+                "\"${workspaceFolder}/.venv/Scripts/python\" -m pip install -U pip -r requirements.txt",
+                "||",
+                "\"${workspaceFolder}/.venv/bin/python\" -m pip install -U pip -r requirements.txt"
+            ],
+            "problemMatcher": [],
+            "dependsOn": "Create venv & Install deps"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run webcam detector (F5)",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/infer_webcam.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--conf", "0.4",
+                "--cam", "0",
+                "--model", "yolov8n.pt"
+            ],
+            "env": { "PYTHONPATH": "${workspaceFolder}" },
+            "preLaunchTask": "Install requirements"
+        }
+    ]
+}
