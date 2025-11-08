@@ -15,12 +15,12 @@ Below is an example of YOLOv8 detecting multiple objects from a single image (`b
 It demonstrates YOLO’s ability to recognize several object categories simultaneously.
 
 <p align="center">
-  <img src="/Users/omarborges/Desktop/Progettini GitHub/Real-Time Object Detector/runs/detect/predict/bus.jpg" alt="YOLOv8 Bus Detection Example" width="720">
+  <img src="runs/detect/predict/bus.jpg" alt="YOLOv8 Bus Detection Example" width="720">
 </p>
 
 To reproduce this image yourself, run:
 ```bash
-yolo predict model=yolov8n.pt source='/Users/omarborges/Desktop/Progettini GitHub/Real-Time Object Detector/bus.jpg' conf=0.25 imgsz=640
+yolo predict model=yolov8n.pt source='https://ultralytics.com/images/bus.jpg' conf=0.25 imgsz=640
 ---
 
 ## Project Description
