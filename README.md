@@ -15,7 +15,7 @@ Below is an example of YOLOv8 detecting multiple objects from a single image (`b
 It demonstrates YOLO’s ability to recognize several object categories simultaneously.
 
 <p align="center">
-  <img src="runs/detect/predict/bus.jpg" alt="YOLOv8 Bus Detection Example" width="720">
+  <img src="assets/bus.jpg" alt="YOLOv8 Bus Detection Example" width="720">
 </p>
 
 To reproduce this image yourself, run:
